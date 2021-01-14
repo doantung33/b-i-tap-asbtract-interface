@@ -5,42 +5,42 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<ChienGion>chienGions= new ArrayList<>();
-        List<Thit>thits=new ArrayList<>();
-        ChienGion chienGion= new ChienGion("c1","aringon1", LocalDate.parse("2020-01-10"),2000,10);
-        ChienGion chienGion1= new ChienGion("c2","aringon2", LocalDate.parse("2020-02-20"),2500,30);
-        ChienGion chienGion2= new ChienGion("c3","aringon3", LocalDate.parse("2020-04-20"),2000,10);
-        ChienGion chienGion3= new ChienGion("c4","aringon4", LocalDate.parse("2020-09-25"),2000,20);
-        ChienGion chienGion4= new ChienGion("c5","aringon5", LocalDate.parse("2020-11-30"),2200,30);
-        Thit thit= new Thit("t1","bò1",LocalDate.parse("2021-01-05"),80,2);
-        Thit thit1= new Thit("t2","bò2",LocalDate.parse("2021-01-10"),85,6);
-        Thit thit2= new Thit("t3","bò3",LocalDate.parse("2021-01-15"),83,2);
-        Thit thit3=new Thit("t4","bò4",LocalDate.parse("2021-01-20"),89,3);
-        Thit thit4= new Thit("t5","bò5",LocalDate.parse("2021-01-25"),90,7);
-        chienGions=new ArrayList<ChienGion>(Arrays.asList(chienGion,chienGion1,chienGion2,chienGion3,chienGion4));
-        System.out.println(chienGions);
-        thits=new ArrayList<Thit>(Arrays.asList(thit,thit1,thit2,thit3,thit4));
-        System.out.println(thits);
-        double giagoc=0;
-        double giasale=0;
-        double totalc=0;
-        for (ChienGion c:chienGions
+        List<ChienGion>crispy= new ArrayList<>();
+        List<Thit>meat=new ArrayList<>();
+        ChienGion crispy1= new ChienGion("c1","aringon1", LocalDate.parse("2020-01-10"),2000,10);
+        ChienGion crispy2= new ChienGion("c2","aringon2", LocalDate.parse("2020-02-20"),2500,30);
+        ChienGion crispy3= new ChienGion("c3","aringon3", LocalDate.parse("2020-04-20"),2000,10);
+        ChienGion crispy4= new ChienGion("c4","aringon4", LocalDate.parse("2020-09-25"),2000,20);
+        ChienGion crispy5= new ChienGion("c5","aringon5", LocalDate.parse("2020-11-30"),2200,30);
+        Thit meat1= new Thit("t1","bò1",LocalDate.parse("2021-01-05"),80,2);
+        Thit meat2= new Thit("t2","bò2",LocalDate.parse("2021-01-10"),85,6);
+        Thit meat3= new Thit("t3","bò3",LocalDate.parse("2021-01-15"),83,2);
+        Thit meat4=new Thit("t4","bò4",LocalDate.parse("2021-01-20"),89,3);
+        Thit meat5= new Thit("t5","bò5",LocalDate.parse("2021-01-25"),90,7);
+        crispy=new ArrayList<>(Arrays.asList(crispy1,crispy2,crispy3,crispy4,crispy5));
+        System.out.println(crispy);
+        meat=new ArrayList<>(Arrays.asList(meat1,meat2,meat3,meat4,meat5));
+        System.out.println(meat);
+        double cost=0;
+        double salePrice=0;
+        double totalDiscount=0;
+        for (ChienGion c:crispy
              ) {
-            giagoc+= c.getAmount();
-            giasale+=c.getRealMoney();
+            cost+= c.getAmount();
+            salePrice+=c.getRealMoney();
         }
-        totalc=giagoc-giasale;
-        System.out.println("sale="+totalc);
-        double giagoct=0;
-        double giasalet=0;
-        double totalt=0;
-        for (Thit t:thits
+        totalDiscount=cost-salePrice;
+        System.out.println("sale="+totalDiscount);
+        double cost1=0;
+        double salePrice1=0;
+        double totalDiscount1=0;
+        for (Thit t:meat
              ) {
-            giagoct+=t.getAmount();
-            giasalet+=t.getRealMoney();
+            cost1+=t.getAmount();
+            salePrice1+=t.getRealMoney();
         }
-        totalt=giagoct-giasalet;
-        System.out.println("Sale= "+totalt);
+        totalDiscount1=cost1-salePrice1;
+        System.out.println("Sale= "+totalDiscount1);
 //        chienGion.toString();
 //        chienGion1.toString();
 //        chienGion2.toString();
