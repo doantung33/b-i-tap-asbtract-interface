@@ -31,6 +31,7 @@ public class ChienGion extends VatLieu implements ChietKhau {
         }else return (1-0.05)*getAmount();
     }
 
+
     @Override
     public String toString() {
         return "ChienGion{" +

@@ -31,10 +31,11 @@ public class Thit extends VatLieu implements ChietKhau {
         }else return (1-0.1)*getAmount();
     }
 
+
     @Override
     public String toString() {
         return "Thit{" +
-                "khối lượng=" + weight +" tổng tiền= "+getRealMoney()+" chiết khấu= "+getRealMoney()+
+                "khối lượng=" + weight +" tổng tiền= "+getAmount()+" chiết khấu= "+getRealMoney()+
                 '}';
     }
 }

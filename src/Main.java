@@ -21,6 +21,26 @@ public class Main {
         System.out.println(chienGions);
         thits=new ArrayList<Thit>(Arrays.asList(thit,thit1,thit2,thit3,thit4));
         System.out.println(thits);
+        double giagoc=0;
+        double giasale=0;
+        double totalc=0;
+        for (ChienGion c:chienGions
+             ) {
+            giagoc+= c.getAmount();
+            giasale+=c.getRealMoney();
+        }
+        totalc=giagoc-giasale;
+        System.out.println("sale="+totalc);
+        double giagoct=0;
+        double giasalet=0;
+        double totalt=0;
+        for (Thit t:thits
+             ) {
+            giagoct+=t.getAmount();
+            giasalet+=t.getRealMoney();
+        }
+        totalt=giagoct-giasalet;
+        System.out.println("Sale= "+totalt);
 //        chienGion.toString();
 //        chienGion1.toString();
 //        chienGion2.toString();
